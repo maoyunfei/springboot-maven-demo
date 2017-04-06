@@ -1,10 +1,20 @@
 server:
-  port: 8000
+  port: 8090
 
 spring:
+  application:
+    name: Spring Boot Admin Web
+  boot:
+    admin:
+      url: http://localhost:${server.port}
+  jackson:
+    serialization: true
   profiles:
     active: dev
 
+endpoints:
+  health:
+    sensitive: false
 
 ---
 
