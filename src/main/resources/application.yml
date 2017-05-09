@@ -4,23 +4,4 @@ server:
 spring:
   application:
     name: swagger-demo
-  profiles:
-    active: dev
 
----
-
-spring:
-  profiles: dev
-
-
-
----
-
-spring:
-  profiles: test
-
-
----
-
-spring:
-  profiles: production-bx
